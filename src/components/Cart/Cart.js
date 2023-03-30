@@ -36,7 +36,8 @@ const Cart = (props) => {
     );
 
     return (
-        <div className={classes.backdrop}>
+        <div>
+            <div className={classes.backdrop} onClick={props.onHideCart} ></div>
             <div className={classes.modal}>
                 {cartItems}
                 <div className={classes.total}>
